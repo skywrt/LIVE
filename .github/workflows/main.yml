@@ -1,0 +1,55 @@
+name: Sync IPTV Playlists
+
+on:
+  schedule:
+    - cron: '0 */2 * * *' 
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Download and Update IPTV Playlists
+      run: |
+        echo "🎵 开始下载 IPTV 播放列表..."
+        
+        # 下载所有播放列表文件
+        wget https://raw.githubusercontent.com/pdd520/iptv-api/master/output/rtp/%E4%B8%8A%E6%B5%B7_%E7%94%B5%E4%BF%A1.m3u -O iptv.m3u || echo "❌ iptv.m3u 下载失败"
+        
+        # 检查下载结果
+        echo "📊 文件下载状态："
+        for file in iptv.m3u; do
+          if [ -f "$file" ] && [ -s "$file" ]; then
+            size=$(wc -c < "$file")
+            echo "✅ $file: ${size} 字节"
+          else
+            echo "❌ $file: 下载失败或为空"
+          fi
+        done
+        
+        # 配置 Git
+        git config --local user.name "github-actions[bot]"
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        
+        # 检查是否有变更
+        if git diff --quiet *.m3u 2>/dev/null; then
+          echo "ℹ️ 没有检测到文件变更，跳过提交"
+          exit 0
+        fi
+        
+        # 添加并提交文件
+        git add *.m3u
+        git commit -m "chore: auto-update IPTV playlists - $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+        echo "✅ 文件已提交"
+        
+    - name: Push changes
+      run: |
+        git push origin ${{ github.ref_name }}
+        echo "🚀 更新已推送到仓库"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
