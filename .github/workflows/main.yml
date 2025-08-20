@@ -37,19 +37,23 @@ jobs:
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         
         # 检查是否有变更
+        echo "🔍 检查文件变更..."
+        git status
         if git diff --quiet *.m3u 2>/dev/null; then
           echo "ℹ️ 没有检测到文件变更，跳过提交"
           exit 0
         fi
         
         # 添加并提交文件
+        echo "📝 检测到变更，准备提交..."
         git add *.m3u
         git commit -m "chore: auto-update IPTV playlists - $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
         echo "✅ 文件已提交"
         
     - name: Push changes
       run: |
-        git push origin ${{ github.ref_name }}
-        echo "🚀 更新已推送到仓库"
+        echo "🚀 开始推送更新..."
+        git push origin ${{ github.ref_name }} || echo "❌ 推送失败，请检查错误信息"
+        echo "✅ 更新已推送到仓库"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
