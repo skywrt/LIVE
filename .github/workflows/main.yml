@@ -36,10 +36,16 @@ jobs:
         git config --local user.name "github-actions[bot]"
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         
-        # 检查是否有变更
+        # 检查是否有变更，包括未跟踪文件和新文件
         echo "🔍 检查文件变更..."
         git status
-        if git diff --quiet *.m3u 2>/dev/null; then
+        # 检查未跟踪文件
+        if [ -n "$(git status --porcelain | grep '^??')" ]; then
+          echo "ℹ️ 检测到未跟踪文件，准备添加..."
+          git add *.m3u
+        fi
+        # 检查是否有变更（包括已跟踪和未跟踪文件）
+        if git diff --staged --quiet *.m3u 2>/dev/null && git diff --quiet *.m3u 2>/dev/null; then
           echo "ℹ️ 没有检测到文件变更，跳过提交"
           exit 0
         fi
