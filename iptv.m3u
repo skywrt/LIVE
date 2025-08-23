@@ -1,5 +1,5 @@
 #EXTM3U
-#Created by GitHub Actions: 2025-08-23 00:43:20 UTC
+#Created by GitHub Actions: 2025-08-23 02:11:49 UTC
 #Source: shanghai
 
 #EXTINF:-1 tvg-name="CCTV-1" tvg-logo="https://raw.githubusercontent.com/pdd520/iptv-api/master/tv/CCTV1.png" group-title="📺央视频道",CCTV1综合
@@ -11,6 +11,8 @@ rtp://239.45.1.68:5140
 #EXTINF:-1 tvg-name="CCTV-4" tvg-logo="https://raw.githubusercontent.com/pdd520/iptv-api/master/tv/CCTV4.png" group-title="📺央视频道",CCTV4中文国际
 rtp://239.45.0.2:5140
 #EXTINF:-1 tvg-name="CCTV-5" tvg-logo="https://raw.githubusercontent.com/pdd520/iptv-api/master/tv/CCTV5.png" group-title="📺央视频道",CCTV5体育
+rtp://239.45.1.69:5140
+#EXTINF:-1 tvg-name="CCTV-5" tvg-logo="https://raw.githubusercontent.com/pdd520/iptv-api/master/tv/CCTV5.png" group-title="📺央视频道",CCTV5+体育赛事
 rtp://239.45.1.69:5140
 #EXTINF:-1 tvg-name="CCTV-6" tvg-logo="https://raw.githubusercontent.com/pdd520/iptv-api/master/tv/CCTV6.png" group-title="📺央视频道",CCTV6电影
 rtp://239.45.1.70:5140
@@ -38,8 +40,6 @@ rtp://239.45.3.52:5140
 rtp://239.45.1.82:5140
 #EXTINF:-1 tvg-name="东南卫视" tvg-logo="https://raw.githubusercontent.com/pdd520/iptv-api/master/tv/东南卫视.png" group-title="📺卫视频道",东南卫视
 rtp://239.45.1.121:5140
-#EXTINF:-1 tvg-name="东方卫视" tvg-logo="https://raw.githubusercontent.com/pdd520/iptv-api/master/tv/东方卫视.png" group-title="📺卫视频道",东方卫视
-rtp://239.45.3.146:5140
 #EXTINF:-1 tvg-name="云南卫视" tvg-logo="https://raw.githubusercontent.com/pdd520/iptv-api/master/tv/云南卫视.png" group-title="📺卫视频道",云南卫视
 rtp://239.45.0.4:5140
 #EXTINF:-1 tvg-name="兵团卫视" tvg-logo="https://raw.githubusercontent.com/pdd520/iptv-api/master/tv/兵团卫视.png" group-title="📺卫视频道",兵团卫视
@@ -104,15 +104,5 @@ rtp://239.45.1.232:5140
 rtp://239.45.1.230:5140
 #EXTINF:-1 tvg-name="黑龙江卫视" tvg-logo="https://raw.githubusercontent.com/pdd520/iptv-api/master/tv/黑龙江卫视.png" group-title="📺卫视频道",黑龙江卫视
 rtp://239.45.3.232:5140
-#EXTINF:-1 tvg-name="五星体育" tvg-logo="https://raw.githubusercontent.com/pdd520/iptv-api/master/tv/体育.png" group-title="📺专题频道",五星体育
-rtp://239.45.3.210:5140
-#EXTINF:-1 tvg-name="新闻综合" tvg-logo="https://raw.githubusercontent.com/pdd520/iptv-api/master/tv/新闻综合.png" group-title="📺专题频道",新闻综合
-rtp://239.45.3.209:5140
-#EXTINF:-1 tvg-name="中国天气" tvg-logo="https://raw.githubusercontent.com/pdd520/iptv-api/master/tv/中国天气.png" group-title="📺其他频道",中国天气
-rtp://239.45.1.47:5140
-#EXTINF:-1 tvg-name="中天电视-1" tvg-logo="https://raw.githubusercontent.com/pdd520/iptv-api/master/tv/CtiTV.png" group-title="📺专题频道", 中天电视-1
-https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1755931404/ei/rA6paKFuofax8g-16M2oAQ/ip/20.172.6.69/id/vr3XyVCR4T0.2/itag/96/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D137/rqh/1/hls_chunk_host/rr1---sn-2imern76.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/playlist_duration/30/manifest_duration/30/siu/1/bui/AY1jyLP_cIyoSwbGaLEaiMe4o_CsSTd3D4CWUvfFds1Ootny20Ad8lTXrJ9R15FGoyUC4ec6/spc/l3OVKR4b8vls0pcbS2qPw08emiuwQbXFLDlP28dL4CaXRnvhFfQHGqDbLRZmYl-_Nt04/vprv/1/playlist_type/DVR/met/1755909804,/mh/40/mm/44/mn/sn-2imern76/ms/lva/mv/u/mvi/1/pl/16/rms/lva,lva/dover/11/pacing/0/keepalive/yes/fexp/51355912,51552689,51565115,51565682,51580968/mt/1755908305/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,playlist_duration,manifest_duration,siu,bui,spc,vprv,playlist_type/sig/AJfQdSswRAIgKgQ4EYfLQsBE-7kbuDviCTWOwBuVgmQgtaio77eWekYCIG19lytsDBaATdIVRaXvzbNVfprYx5SqaTB7gDHxcCTt/lsparams/hls_chunk_host,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRgIhAKIeWAzvf_u3dmVWN2C7xb0iPaelfbNbkoHyS_rKjRUvAiEA0CErlpn6tpOm0fyg-NLusol4Dur3IOuzFRmX6bN0VvA%3D/playlist/index.m3u8
-#EXTINF:-1 tvg-name="中天新闻" tvg-logo="https://raw.githubusercontent.com/pdd520/iptv-api/master/tv/CtiNews.png" group-title="📺专题频道", 中天新闻
-https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1755931408/ei/rw6paM_uI5iYsfIPg-21iQE/ip/20.172.6.69/id/0dff644ff1c1d8d6/itag/96/source/youtube/requiressl/yes/ratebypass/yes/pfa/1/sgoap/clen%3D117902354%3Bdur%3D7285.121%3Bgir%3Dyes%3Bitag%3D140%3Blmt%3D1755745554428999/sgovp/clen%3D2406356727%3Bdur%3D7285.066%3Bgir%3Dyes%3Bitag%3D137%3Blmt%3D1755747436847621/rqh/1/hls_chunk_host/rr4---sn-2imeyn7k.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/met/1755909807,/mh/IO/mm/31,26/mn/sn-2imeyn7k,sn-a5mekn6r/ms/au,onr/mv/m/mvi/4/pl/16/rms/au,au/force_finished/1/initcwndbps/10856250/siu/1/bui/AY1jyLNQKPEiLvgSoXPodvFLEaeMzQHxS0Z4Bu85pRhn-Exk5zOCAy_ftI7JpG6j_vNhdRi8/spc/l3OVKYBc12vGDo695AvgWpZz84BcJjQxm5mt9Hng6b2iU2cjoFU6wxcSckb0aCy3fvk8pj2S2eeuaj72mU3zZlg/vprv/1/playlist_type/CLEAN/dover/11/txp/7309224/mt/1755909413/fvip/5/keepalive/yes/fexp/51355912,51552689,51565115,51565682,51580968/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,pfa,sgoap,sgovp,rqh,xpc,force_finished,siu,bui,spc,vprv,playlist_type/sig/AJfQdSswRAIgGCnVJYqOQ7wYy_dorsAfMYCfS_0XnSkt_6f6PJNdJ8UCIHgzV_GWxEldnqrmeTaLsHvro6HdgST0ASs6zLZd9vFE/lsparams/hls_chunk_host,met,mh,mm,mn,ms,mv,mvi,pl,rms,initcwndbps/lsig/APaTxxMwRAIgFsiu5Io68RcMY3CnWiHfpwAQGtASHrJQUX_GzYJ0es4CIB5OaDLBPRIopmiy1myO11PCn3LHOsfl_8BbM_tsD-qt/playlist/index.m3u8
-#EXTINF:-1 tvg-name="中天电视-2" tvg-logo="https://raw.githubusercontent.com/pdd520/iptv-api/master/tv/CtiTV.png" group-title="📺专题频道", 中天电视-2
-https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1755931419/ei/ug6paK6KNMqRsfIPsJS4kQo/ip/20.172.6.69/id/53e345be259ca106/itag/96/source/youtube/requiressl/yes/ratebypass/yes/pfa/1/sgoap/clen%3D467636023%3Bdur%3D28895.119%3Bgir%3Dyes%3Bitag%3D140%3Blmt%3D1755767559635854/sgovp/clen%3D13320760561%3Bdur%3D28895.065%3Bgir%3Dyes%3Bitag%3D137%3Blmt%3D1755767329887397/rqh/1/hls_chunk_host/rr5---sn-2imern7r.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/met/1755909818,/mh/g7/mm/31,29/mn/sn-2imern7r,sn-2imeyn7k/ms/au,rdu/mv/m/mvi/5/pl/16/rms/au,au/force_finished/1/initcwndbps/10856250/siu/1/bui/AY1jyLMlvvrb5Z5AFTwSQiUM6PY9DUo3oGgHfAdgGfQfEhSNAkQglWNr-0nMx7bhZlUSV-EO/spc/l3OVKXkb2p7HKNaz6_grBK_FCwprjlofqO8etfVY-atrzcWFlxYnQOiuArIunranLN9WRqRDT9vWO2PGjpz-j0M/vprv/1/playlist_type/CLEAN/dover/11/txp/7309224/mt/1755909413/fvip/3/keepalive/yes/fexp/51355912,51552689,51565115,51565682,51580968/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,pfa,sgoap,sgovp,rqh,xpc,force_finished,siu,bui,spc,vprv,playlist_type/sig/AJfQdSswRAIgIcMzBWlzDUhu1etgcL23x1iCKEuUDNxo4cuiAZqoZVgCICUr7uGnghggBoXa7EWJWrtf_Oky46Cr3hM0hFm2zkZn/lsparams/hls_chunk_host,met,mh,mm,mn,ms,mv,mvi,pl,rms,initcwndbps/lsig/APaTxxMwRQIgNlI-wKBhtEKmbPJwfNC5FAb3pzlNl8fKjpWK5bZg4kwCIQC42qtGqr60TahYAJHv9iFCCMzkCFKPHhapQuT1_KrC_Q%3D%3D/playlist/index.m3u8
+#EXTINF:-1 tvg-name="中天电视" tvg-logo="https://raw.githubusercontent.com/pdd520/iptv-api/master/tv/CtiNews.png" group-title="📺专题频道", 中天电视
+https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1755936712/ei/aCOpaKPbCqyGkucP2ryYuQU/ip/135.119.239.34/id/vr3XyVCR4T0.2/itag/96/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D137/rqh/1/hls_chunk_host/rr3---sn-vgqsrnzz.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/playlist_duration/30/manifest_duration/30/siu/1/bui/AY1jyLPx7VAfN92Z8jBXBNN2FBnz4QJT1OFmweo_Qk1Pmlno2xpG9SZzjbsqaKN6wI6rFO7z/spc/l3OVKSlX084_Gg7RNBPjLvPwaBTinWDTB_e0mHZ4ltYRldw8fKG1wspbimB5mVFSNMsh/vprv/1/playlist_type/DVR/met/1755915112,/mh/40/mm/44/mn/sn-vgqsrnzz/ms/lva/mv/u/mvi/3/pl/24/rms/lva,lva/dover/11/pacing/0/keepalive/yes/fexp/51355912,51552689,51565115,51565682,51580968/mt/1755914448/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,playlist_duration,manifest_duration,siu,bui,spc,vprv,playlist_type/sig/AJfQdSswRQIgMvYg0VIRpK_KWPx_plSA575uJv9VVeULLa33hq092ZkCIQDQcptTimXH_Nqz6Oakmknp5jyN2TVN1iRvkRJWkR94zA%3D%3D/lsparams/hls_chunk_host,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRAIgU02RcLl4rihTwntQkWL7fp5KfQbymQo8VLAvqPiaRm4CIEK2Yz_qZV4M5mYoCz9IZxhacDtTGxlmrVmGLhhA3qE_/playlist/index.m3u8
